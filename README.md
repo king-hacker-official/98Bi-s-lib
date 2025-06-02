@@ -2,44 +2,56 @@
 
 > A beautiful, fast, and lightweight Roblox UI Library optimized for **Mobile** and **PC**.
 
-The **9Bi UI** is a simple yet stylish user interface library built for exploit developers. It features tabbed navigation, clean design, and full customization for toggles, buttons, textboxes, and more — all optimized to look and feel smooth on both phones and desktops.
+**9Bi UI** is a sleek and easy-to-use interface library designed for exploit developers. Inspired by popular UIs like Rayfield and Kavo, it delivers responsive, modern GUI elements across all devices.
 
 ---
 
 ## 🌟 Features
 
-- 💡 Clean tabbed layout
-- 📱 Fully mobile & PC compatible
-- 🎨 Rounded design with modern aesthetics
-- 🔘 Easy to use UI elements: buttons, toggles, labels, and textboxes
-- ⚡ Lightweight and easy to integrate
-- 🧱 Dynamic element stacking with `UIListLayout`
-- 💾 No config saving (yet) – keep it lightweight
+- ✨ Clean and minimal tabbed layout  
+- 📱 Mobile and PC compatible  
+- 🟣 Modern design with rounded corners  
+- 🧩 Elements: Buttons, Toggles, Labels, Textboxes  
+- ⚡ Lightweight and easy to integrate  
+- 📚 Auto-stacked elements using `UIListLayout`  
+- ❌ No configuration saving (yet) for simplicity  
 
 ---
 
-## 📦 How to Use
+## 🧭 Step-by-Step Guide
+
+### 1️⃣ Load the Library
 
 ```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/king-hacker-official/98Bi-s-lib/main/Source-lib.lua"))()
+```
 
-local Window = Library:CreateWindow({
-    Title = "My Hub",
-    Subtitle = "Made with 9Bi"
-})
 
-local Tab = Window:CreateTab("Main")
+### 2️⃣ Create a Window
 
+```
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/king-hacker-official/98Bi-s-lib/main/Source-lib.lua"))()
+```
+3️⃣ Add a Tab
+```
+local Tab = Window:CreateTab("Main") -- The name that appears on the tab button
+```
+4️⃣ Add Elements to the Tab
+```
+-- Button
 Tab:CreateButton("Click me", function()
     print("Button clicked!")
 end)
 
+-- Toggle
 Tab:CreateToggle("Enable Option", false, function(state)
     print("Toggle state:", state)
 end)
 
+-- Textbox
 Tab:CreateTextbox("Enter something...", function(input)
-    print("User input:", input)
+    print("Input received:", input)
 end)
 
+-- Label
 Tab:CreateLabel("This is a label.")
