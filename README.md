@@ -30,7 +30,10 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/king-
 ### 2️⃣ Create a Window
 
 ```
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/king-hacker-official/98Bi-s-lib/main/Source-lib.lua"))()
+local Window = Library:CreateWindow({
+    Title = "My Hub",       -- Main title at the top
+    Subtitle = "Made with 9Bi" -- Subtitle (optional)
+})
 ```
 3️⃣ Add a Tab
 ```
