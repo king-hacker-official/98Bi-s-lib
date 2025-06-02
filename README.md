@@ -21,7 +21,7 @@ The **9Bi UI** is a simple yet stylish user interface library built for exploit 
 ## 📦 How to Use
 
 ```lua
-local Library = loadstring(game:HttpGet("https://your.cdn/9Bi/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/king-hacker-official/98Bi-s-lib/main/Source-lib.lua"))()
 
 local Window = Library:CreateWindow({
     Title = "My Hub",
